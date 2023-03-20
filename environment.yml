@@ -1,11 +1,17 @@
 name: xeus-python-kernel
 channels:
-  - https://repo.mamba.pm/emscripten-forge
+  - conda-forge
   - nodefaults
 dependencies:
   - matplotlib:
-    channels:
-      - https://repo.mamba.pm/emscripten-forge
-  - numpy
-  - pandas
-  - tqdm
+      channels:
+        - https://repo.mamba.pm/emscripten-forge
+  - numpy:
+      channels:
+        - https://repo.mamba.pm/emscripten-forge
+  - pandas:
+      channels:
+        - https://repo.mamba.pm/emscripten-forge
+  - tqdm:
+      channels:
+        - conda-forge
