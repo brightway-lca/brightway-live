@@ -9,6 +9,3 @@ dependencies:
   - emscripten-forge::matplotlib # from channel emscripten-forge
   - emscripten-forge::peewee # from channel emscripten-forge (required by brightway)
   - emscripten-forge::lxml # from channel emscripten-forge (required by brightway)
-  - conda-forge::bw2data # from channel conda-forge
-  - conda-forge::bw2calc # from channel conda-forge
-  - conda-forge::bw2io # from channel conda-forge
