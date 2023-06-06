@@ -15,5 +15,26 @@ The interactive learning and teaching documentation for the Brightway life-cycle
 This repo is based on the [`xeus-python-demo`](https://github.com/jupyterlite/xeus-python-demo) template. For testing purposes, [the JupyterLite Hub of this template](https://jupyterlite.github.io/xeus-python-demo/lab/index.html) can be used.
 
 ## Quickstart
-
 ### Setup Repository
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/brightway-lca/brightway-hub.git
+```
+
+### Setup Python Environment
+
+Set up a Python virtual environment that allows you to build the JupyterLite hub locally. A [Conda environment file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) is provided [for convenient setup](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). The file is located at [``./build-environment.yml``](./build-environment.yml). Install the environment `build-env` by running from the repository root directory:
+
+```bash
+conda env create -f 'build-environment.yml'
+```
+
+### Building the Page
+
+You can build the site by pushing to the `main` branch. The GitHub Actions workflow [`deploy.yml`](.github/workflows/deploy.yml) (![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/brightway-lca/brightway-hub/deploy.yml?label=status&logo=githubactions&logoColor=white)) will build the site and publish it.
+
+### Contributing
+
+Please follow the extensive guide we have provided [on the documentation website](https://documentation.brightway.dev/en/latest/source/contributing/contributing.html).
