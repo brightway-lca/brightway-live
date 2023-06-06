@@ -5,13 +5,13 @@ channels:
   - nodefaults
 dependencies:
   # DATA SCIENCE
-  - pandas # from channel emscripten-forge
-  - numpy # from channel emscripten-forge
+  - pandas
+  - numpy
   # PLOTTING
-  - matplotlib # from channel emscripten-forge
+  - matplotlib
   # BRIGHTWAY DEPENDENCIES (NOT PURE PYTHON)
-  - peewee # from channel emscripten-forge (required by brightway)
-  - lxml # from channel emscripten-forge (required by brightway)
+  - https://repo.mamba.pm/emscripten-forge::peewee # required by Brightway
+  - https://repo.mamba.pm/emscripten-forge::lxml # required by Brightway
   # BRIGHTWAY CORE
   - conda-forge::bw2io=0.8.8 # https://anaconda.org/conda-forge/bw2io/files
   - conda-forge::bw2data=3.6.6 # https://anaconda.org/conda-forge/bw2data/files
