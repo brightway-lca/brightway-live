@@ -4,8 +4,4 @@ channels:
   - conda-forge
   # check packages at https://beta.mamba.pm/channels
 dependencies:
-  - emscripten-forge::pandas # from channel emscripten-forge
-  - emscripten-forge::numpy # from channel emscripten-forge
-  - emscripten-forge::matplotlib # from channel emscripten-forge
-  - emscripten-forge::peewee # from channel emscripten-forge (required by brightway)
-  - emscripten-forge::lxml # from channel emscripten-forge (required by brightway)
+  - pandas
