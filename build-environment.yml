@@ -2,7 +2,7 @@ name: build-env
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
+  - python=3.10
   - jupyter_server=2.6.0 # https://github.com/jupyter-server/jupyter_server/releases
   - pip
   - pip:
