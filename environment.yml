@@ -13,6 +13,6 @@ dependencies:
   - https://repo.mamba.pm/emscripten-forge::peewee # required by Brightway
   - https://repo.mamba.pm/emscripten-forge::lxml # required by Brightway
   # BRIGHTWAY CORE
-  - https://conda.anaconda.org/cmutel::bw2io=0.9.dev19 # https://anaconda.org/cmutel/bw2io/files
-  - https://conda.anaconda.org/cmutel::bw2data=4.0.0.dev19 # https://anaconda.org/cmutel/bw2data/files
+  - https://conda.anaconda.org/cmutel::bw2io=0.9.dev21 # https://anaconda.org/cmutel/bw2io/files
+  - https://conda.anaconda.org/cmutel::bw2data=4.0.0.dev21 # https://anaconda.org/cmutel/bw2data/files
   - https://conda.anaconda.org/cmutel::bw2calc=1.0.dev13 # https://anaconda.org/cmutel/bw2calc/files
