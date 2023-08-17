@@ -3,8 +3,8 @@ channels:
   - conda-forge
 dependencies:
   - python=3.10
-  - jupyter_server=2.6.0 # https://github.com/jupyter-server/jupyter_server/releases
+  - jupyter_server=2.7.1 # https://anaconda.org/conda-forge/jupyter_server/files
+  - jupyterlite-core==0.1.1 # https://anaconda.org/conda-forge/jupyterlite-core/files
   - pip
   - pip:
-    - jupyterlite-core==0.1.0 # https://github.com/jupyterlite/jupyterlite/releases
     - jupyterlite-xeus-python==0.8.1 # https://github.com/jupyterlite/xeus-python-kernel/releases
