@@ -10,9 +10,6 @@ dependencies:
   # PLOTTING
   - matplotlib
   # BRIGHTWAY DEPENDENCIES (NOT PURE PYTHON)
-  - https://repo.mamba.pm/emscripten-forge::peewee # required by Brightway
-  - https://repo.mamba.pm/emscripten-forge::lxml # required by Brightway
+  - peewee # required by Brightway, loaded from emscripten-forge
+  - lxml # required by Brightway, loaded from emscripten-forge
   # BRIGHTWAY CORE
-  - https://conda.anaconda.org/cmutel::bw2io=0.9.dev21 # https://anaconda.org/cmutel/bw2io/files
-  - https://conda.anaconda.org/cmutel::bw2data=4.0.0.dev21 # https://anaconda.org/cmutel/bw2data/files
-  - https://conda.anaconda.org/cmutel::bw2calc=1.0.dev13 # https://anaconda.org/cmutel/bw2calc/files
