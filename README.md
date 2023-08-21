@@ -31,9 +31,19 @@ Set up a Python virtual environment that allows you to build the JupyterLite hub
 conda env create -f 'build-environment.yml'
 ```
 
-### Building the Page
+### Building the JupyterLite Environment
 
 You can build the site by pushing to the `main` branch. The GitHub Actions workflow [`deploy.yml`](.github/workflows/deploy.yml) (![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/brightway-lca/brightway-hub/deploy.yml?label=status&logo=githubactions&logoColor=white)) will build the site and publish it.
+
+### Using the JypterLite Environment
+
+#### Reset the JupyterLite Environment
+
+ - [ ] https://github.com/jupyterlite/jupyterlite/issues/9
+
+Current way to [reset the environment in Google Chrome](https://github.com/jupyterlite/jupyterlite/issues/9#issuecomment-875870620): 
+
+> Developer > Developer Tools > Application > Storage > Indexed DB > JupyterLite Storage > Delete Database
 
 ### Contributing
 

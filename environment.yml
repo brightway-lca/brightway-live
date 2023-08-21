@@ -13,6 +13,6 @@ dependencies:
   - peewee # required by Brightway, loaded from emscripten-forge
   - lxml # required by Brightway, loaded from emscripten-forge
   # BRIGHTWAY CORE
-  - bw2io=0.9.dev21 # https://anaconda.org/cmutel/bw2io/files
-  - bw2data=4.0.0.dev21 # https://anaconda.org/cmutel/bw2data/files
-  - bw2calc=1.0.dev13 # https://anaconda.org/cmutel/bw2calc/files
+  - bw2io=0.9.dev21 # https://anaconda.org/conda-forge/bw2io/files
+  - bw2data=4.0.0.dev21 # https://anaconda.org/conda-forge/bw2data/files
+  - bw2calc=1.0.dev13 # https://anaconda.org/conda-forge/bw2calc/files

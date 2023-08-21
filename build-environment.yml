@@ -6,3 +6,4 @@ dependencies:
   - jupyter_server=2.7.1 # https://anaconda.org/conda-forge/jupyter_server/files
   - jupyterlite-core=0.1.1 # https://anaconda.org/conda-forge/jupyterlite-core/files
   - jupyterlite-xeus-python=0.9.3 # https://anaconda.org/conda-forge/jupyterlite-xeus-python/files
+  - empack=3.1.2 # https://anaconda.org/conda-forge/empack/files # pinned to 3.1.2 due to https://github.com/brightway-lca/brightway-hub/issues/18
