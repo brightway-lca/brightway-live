@@ -2,9 +2,6 @@ name: xeus-python-kernel
 channels:
   - https://repo.mamba.pm/emscripten-forge # check packages at https://beta.mamba.pm/channels
   - https://conda.anaconda.org/conda-forge
-  - https://conda.anaconda.org/conda-forge/label/bw2io_dev
-  - https://conda.anaconda.org/conda-forge/label/bw2data_dev
-  - https://conda.anaconda.org/conda-forge/label/bw2calc_dev
   - nodefaults
 dependencies:
   # DATA SCIENCE
@@ -16,6 +13,6 @@ dependencies:
   - peewee # required by Brightway, loaded from emscripten-forge
   - lxml # required by Brightway, loaded from emscripten-forge
   # BRIGHTWAY CORE
-  - bw2io=0.9.dev21 # https://anaconda.org/conda-forge/bw2io/files
-  - bw2data=4.0.dev21 # https://anaconda.org/conda-forge/bw2data/files
-  - bw2calc=2.0.dev13 # https://anaconda.org/conda-forge/bw2calc/files
+  - https://conda.anaconda.org/conda-forge/label/bw2io_dev::bw2io=0.9.dev21 # https://anaconda.org/conda-forge/bw2io/files
+  - https://conda.anaconda.org/conda-forge/label/bw2data_dev::bw2data=4.0.dev21 # https://anaconda.org/conda-forge/bw2data/files
+  - https://conda.anaconda.org/conda-forge/label/bw2calc_dev::bw2calc=2.0.dev13 # https://anaconda.org/conda-forge/bw2calc/files
