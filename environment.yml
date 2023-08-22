@@ -2,7 +2,7 @@ name: xeus-python-kernel
 channels:
   - https://conda.anaconda.org/conda-forge/label/bw2io_dev
   - https://conda.anaconda.org/conda-forge/label/bw2data_dev
-  - https://conda.anaconda.org/conda-forge/label/bw2calc_wasm
+  - https://conda.anaconda.org/conda-forge/label/bw2calc_dev
   - https://repo.mamba.pm/emscripten-forge # check packages at https://beta.mamba.pm/channels
   - https://conda.anaconda.org/conda-forge
   - nodefaults
