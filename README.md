@@ -56,14 +56,16 @@ You can build the site by pushing to the `main` branch. The GitHub Actions workf
 > ```
 
 > [!NOTE]
-> `conda install` supports channel names as part of the package specs in the environment file [with the syntax](https://github.com/conda/conda/issues/988#issuecomment-436454507):
+> `conda install` supports channel names as part of the package specs in the environment file. \
+> [Use this syntax](https://github.com/conda/conda/issues/988#issuecomment-436454507):
 > ```
 > - https://conda.anaconda.org/conda-forge/label/bw2calc_dev::bw2calc=2.0.dev14
 > - conda-forge::numpy
 > ```
 
 > [!NOTE]
-> `conda build` does not (yet) (cf. https://github.com/conda/conda-build/issues/532).
+> `conda build` does not (yet) support channel names as part of the package specs in the environment file. \
+> (cf. https://github.com/conda/conda-build/issues/532).
 
 ### Using the JypterLite Environment
 
@@ -88,3 +90,4 @@ This means that the environment must be reset manually. [Usually](https://jupyte
 ### Contributing
 
 Please follow the extensive guide we have provided [on the documentation website](https://documentation.brightway.dev/en/latest/source/contributing/contributing.html).
+****
