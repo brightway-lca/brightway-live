@@ -25,12 +25,18 @@ git clone https://github.com/brightway-lca/brightway-hub.git
 
 ### Setup Python Environment
 
+> [!NOTE]
+> To add content (Jupyter Notebooks, Python files, etc.) to the site, no further setup is required. However, if you want to build the site locally, you need to set up a Python environment.
+
 Set up a Python virtual environment that allows you to build the JupyterLite hub locally. A [Conda environment file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) is provided [for convenient setup](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). The file is located at [``./build-environment.yml``](./build-environment.yml). Install the environment `build-env` by running from the repository root directory:
 
 ```bash
 conda env create -f 'build-environment.yml'
 ```
 
+### Adding Content to the JupiterLite Environment
+
+Jupyter Notebook, Python files, etc. can be added to the JupyterLite environment by adding them to the `content` directory.
 ### Building the JupyterLite Environment
 
 You can build the site by pushing to the `main` branch. The GitHub Actions workflow [`deploy.yml`](.github/workflows/deploy.yml) will build the site and publish it.
@@ -46,7 +52,7 @@ You can build the site by pushing to the `main` branch. The GitHub Actions workf
 >  - https://conda.anaconda.org/conda-forge
 >  - nodefaults
 > dependencies:
-> - bw2calc=2.0.dev14>
+> - bw2calc=2.0.dev14
 > ```
 
 > [!NOTE]
