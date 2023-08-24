@@ -50,7 +50,12 @@ You can build the site by pushing to the `main` branch. The GitHub Actions workf
 > ```
 
 > [!NOTE]
-> [`conda install`](https://github.com/conda/conda/issues/988#issuecomment-436454507) supports channel names as part of the package specs in the environment file with the syntax `https://conda.anaconda.org/conda-forge/label/bw2calc_dev::bw2calc=2.0.dev14`. However, [`conda build`] does not (yet) (cf. this issue: https://github.com/conda/conda-build/issues/532)
+> [`conda install`](https://github.com/conda/conda/issues/988#issuecomment-436454507) supports channel names as part of the package specs in the environment file with the syntax:
+> ```
+> - https://conda.anaconda.org/conda-forge/label/bw2calc_dev::bw2calc=2.0.dev14
+> - conda-forge::numpy
+> ```
+> However, `conda build` does not (yet) (cf. https://github.com/conda/conda-build/issues/532)
 
 ### Using the JypterLite Environment
 
