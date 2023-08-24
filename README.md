@@ -35,6 +35,23 @@ conda env create -f 'build-environment.yml'
 
 You can build the site by pushing to the `main` branch. The GitHub Actions workflow [`deploy.yml`](.github/workflows/deploy.yml) (![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/brightway-lca/brightway-hub/deploy.yml?label=status&logo=githubactions&logoColor=white)) will build the site and publish it.
 
+> [!IMPORTANT]
+> If a package is published to a [_channel_](https://docs.anaconda.com/reference/glossary/#channels) under a [_label_](https://docs.anaconda.com/reference/glossary/#label) other than `main`, the channel+label of the package must be specified for the installation to work as expected.
+> The `Build and Deploy` workflow of [`jupyterlite/xeus-python`](https://github.com/jupyterlite/xeus-python-demo) does not currently support channel names as part of the package specs in the environment file `environment.yml`. This means that channel+label of relevant packages  must be defined in the `channels:` section of the `environment.yml` file. For example, the package `bw2calc` is installed from the `conda-forge` channel with the label `bw2calc_dev`:
+> ```
+> name: xeus-python-kernel
+> channels:
+>  - https://conda.anaconda.org/conda-forge/label/bw2calc_dev
+>  - https://repo.mamba.pm/emscripten-forge
+>  - https://conda.anaconda.org/conda-forge
+>  - nodefaults
+> dependencies:
+> - bw2calc=2.0.dev14>
+> ```
+
+> [!NOTE]
+> [`conda install`](https://github.com/conda/conda/issues/988#issuecomment-436454507) supports channel names as part of the package specs in the environment file with the syntax `https://conda.anaconda.org/conda-forge/label/bw2calc_dev::bw2calc=2.0.dev14`. However, [`conda build`] does not (yet) (cf. this issue: https://github.com/conda/conda-build/issues/532)
+
 ### Using the JypterLite Environment
 
 #### Reset the JupyterLite Environment

@@ -1,6 +1,5 @@
 name: xeus-python-kernel
 channels:
-channels:
   - https://conda.anaconda.org/conda-forge/label/bw2io_dev
   - https://conda.anaconda.org/conda-forge/label/bw2data_dev
   - https://conda.anaconda.org/conda-forge/label/bw2calc_dev
