@@ -19,5 +19,5 @@ dependencies:
   - pysocks=1.7.1 # required by bw2data through urllib3 through requests, loaded from conda-forge
   # BRIGHTWAY CORE
   - bw2io=0.9.dev21 # https://anaconda.org/conda-forge/bw2io/files # loaded from conda-forge under the `dev` label
-  - bw2data=4.0.dev21 # https://anaconda.org/conda-forge/bw2data/files # loaded from conda-forge under the `dev` label
+  - bw2data=4.0.dev25 # https://anaconda.org/conda-forge/bw2data/files # loaded from conda-forge under the `dev` label
   - bw2calc=2.0.dev14 # https://anaconda.org/conda-forge/bw2calc/files # loaded from emscripten-forge (cf. https://github.com/conda-forge/bw2calc-feedstock/pull/14)
