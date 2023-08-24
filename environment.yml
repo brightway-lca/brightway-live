@@ -1,5 +1,9 @@
 name: xeus-python-kernel
 channels:
+channels:
+  - https://conda.anaconda.org/conda-forge/label/bw2io_dev
+  - https://conda.anaconda.org/conda-forge/label/bw2data_dev
+  - https://conda.anaconda.org/conda-forge/label/bw2calc_dev
   - https://repo.mamba.pm/emscripten-forge # check packages at https://beta.mamba.pm/channels
   - https://conda.anaconda.org/conda-forge
   - nodefaults
@@ -13,6 +17,6 @@ dependencies:
   - https://repo.mamba.pm/emscripten-forge::peewee # required by Brightway, loaded from emscripten-forge
   - https://repo.mamba.pm/emscripten-forge::lxml # required by Brightway, loaded from emscripten-forge
   # BRIGHTWAY CORE
-  - https://conda.anaconda.org/conda-forge/label/bw2io_dev::bw2io=0.9.dev21 # https://anaconda.org/conda-forge/bw2io/files # loaded from conda-forge under the `dev` label
-  - https://conda.anaconda.org/conda-forge/label/bw2data_dev::bw2data=4.0.dev21 # https://anaconda.org/conda-forge/bw2data/files # loaded from conda-forge under the `dev` label
-  - https://conda.anaconda.org/conda-forge/label/bw2calc_dev::bw2calc=2.0.dev14 # https://anaconda.org/conda-forge/bw2calc/files # loaded from emscripten-forge (cf. https://github.com/conda-forge/bw2calc-feedstock/pull/14)
+  - bw2io=0.9.dev21 # https://anaconda.org/conda-forge/bw2io/files # loaded from conda-forge under the `dev` label
+  - bw2data=4.0.dev21 # https://anaconda.org/conda-forge/bw2data/files # loaded from conda-forge under the `dev` label
+  - bw2calc=2.0.dev14 # https://anaconda.org/conda-forge/bw2calc/files # loaded from emscripten-forge (cf. https://github.com/conda-forge/bw2calc-feedstock/pull/14)
