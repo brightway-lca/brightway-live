@@ -33,7 +33,7 @@ conda env create -f 'build-environment.yml'
 
 ### Building the JupyterLite Environment
 
-You can build the site by pushing to the `main` branch. The GitHub Actions workflow [`deploy.yml`](.github/workflows/deploy.yml) (![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/brightway-lca/brightway-hub/deploy.yml?label=status&logo=githubactions&logoColor=white)) will build the site and publish it.
+You can build the site by pushing to the `main` branch. The GitHub Actions workflow [`deploy.yml`](.github/workflows/deploy.yml) will build the site and publish it.
 
 > [!IMPORTANT]
 > If a package is published to a [_channel_](https://docs.anaconda.com/reference/glossary/#channels) under a [_label_](https://docs.anaconda.com/reference/glossary/#label) other than `main`, the channel+label of the package must be specified for the installation to work as expected.
@@ -61,11 +61,21 @@ You can build the site by pushing to the `main` branch. The GitHub Actions workf
 
 #### Reset the JupyterLite Environment
 
+Currently, the interface of the JupiterLite environment does not provide a way to reset the environment.
+
+##### Related Issues:
+
  - [ ] https://github.com/jupyterlite/jupyterlite/issues/9
 
-Current way to [reset the environment in Google Chrome](https://github.com/jupyterlite/jupyterlite/issues/9#issuecomment-875870620): 
+This means that the environment must be reset manually. [Usually](https://jupyterlite.readthedocs.io/en/latest/howto/configure/storage.html), all data is stored in the browser's `IndexedDB`. You can reset the environment in your browser by following these steps:
+
+- [Google Chrome](https://github.com/jupyterlite/jupyterlite/issues/9#issuecomment-875870620): 
 
 > Developer > Developer Tools > Application > Storage > Indexed DB > JupyterLite Storage > Delete Database
+
+- Mozilla Firefox:
+
+> Tools > Page Info > Permissions > Maintain Offline Storage > Clear Storage
 
 ### Contributing
 
