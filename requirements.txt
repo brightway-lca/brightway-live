@@ -3,7 +3,7 @@ jupyterlite-core==0.1.2 # https://pypi.org/project/jupyterlite-core/#history
 jupyterlab==4.0.5 # https://pypi.org/project/jupyterlab/#history
 
 # Python kernel (optional)
-jupyterlite-pyodide-kernel==0.1.1 # https://pypi.org/project/jupyterlite-pyodide-kernel/#history
+jupyterlite-pyodide-kernel==0.1.2 # https://pypi.org/project/jupyterlite-pyodide-kernel/#history
 
 # JupyterLab: Fasta file renderer (optional)
 jupyterlab-fasta>=3,<4 # https://pypi.org/project/jupyterlab-fasta/#history
