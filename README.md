@@ -9,7 +9,7 @@ The interactive learning and teaching documentation for the Brightway life-cycle
 
 | static documentation | interactive documentation | development playground |
 | ---- | ------------- | ------------- |
-| [docs.brightway.dev](https://github.com/brightway-lca/brightway-documentation) | [learn.brightway.dev](https://github.com/brightway-lca/brightway-learn) | [hub.brightway.dev](https://github.com/brightway-lca/brightway-hub) | 
+| [docs.brightway.dev](https://github.com/brightway-lca/brightway-documentation) | (coming soon!) | [live.brightway.dev](https://github.com/brightway-lca/brightway-live) | 
 
 This repo is based on the [`xeus-python-demo`](https://github.com/jupyterlite/xeus-python-demo) template. For testing purposes, [the JupyterLite Hub of this template](https://jupyterlite.github.io/xeus-python-demo/lab/index.html) can be used.
 
