@@ -16,6 +16,8 @@ This repo is based on the [`jupyterlite-demo`](https://github.com/jupyterlite/de
 > [!IMPORTANT]
 > A version of the hub based instead on the `xeus-python-kernel` is available in the `emscripten-forge` branch of this repo. 
 
+<img width="525" alt="Screenshot 2023-09-15 at 09 50 53" src="https://github.com/brightway-lca/brightway-hub/assets/23102087/f2fa252b-bc73-4577-9f63-77e2526fc8cd">
+
 ## Quickstart
 ### Setup Repository
 
