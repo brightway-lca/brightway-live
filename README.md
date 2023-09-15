@@ -9,7 +9,7 @@ The interactive learning and teaching documentation for the Brightway life-cycle
 
 | static documentation | interactive documentation | development playground |
 | ---- | ------------- | ------------- |
-| [docs.brightway.dev](https://github.com/brightway-lca/brightway-documentation) | (coming soon!) | [hub.brightway.dev](https://github.com/brightway-lca/brightway-hub) | 
+| [docs.brightway.dev](https://github.com/brightway-lca/brightway-documentation) | (coming soon!) | [live.brightway.dev](https://github.com/brightway-lca/brightway-hub) | 
 
 This repo is based on the [`jupyterlite-demo`](https://github.com/jupyterlite/demo) template. For testing purposes, [the JupyterLite Hub of this template](https://jupyterlite.github.io/demo) can be used.
 
