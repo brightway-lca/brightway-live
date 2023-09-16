@@ -7,5 +7,6 @@
       "jupyterlab-tour"
     ],
   },
+  "settingsStorageDrivers": "webSQLStorage",
   "contentsStorageDrivers": "webSQLStorage",
 }
