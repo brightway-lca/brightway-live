@@ -7,7 +7,5 @@
       "jupyterlab-tour"
     ],
   },
-  "env": {
-    "BRIGHTWAY_DIR":"/tmp/brightway",
-  }
+  "contentsStorageDrivers": "webSQLStorage",
 }
