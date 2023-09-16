@@ -1,10 +1,20 @@
 # `brightway-live` (based on `pyodide`) Changelog
 
-This changelog follows the guidelines porposed by the ['keep a changelog'](https://keepachangelog.com/en/1.1.0/) project.
+This changelog follows the guidelines proposed by the ['keep a changelog'](https://keepachangelog.com/en/1.1.0/) project.
 
 ## v0.1.0-beta (2023-09-16)
 
-### branch `pyodide`
+See also the [development meeting minutes](https://github.com/brightway-lca/brightway-live/discussions/21).
+
+### Not related to a specific Branch
+
+#### Added
+
+Deprecated packages and those with pure-Python alternatives were removed from the Brightway dependency list:
+
+ - https://github.com/brightway-lca/brightway-hub/issues/7 by @cmutel and @michaelweinold
+
+### Branch `pyodide`
 
 Initial release of `brightway-live` (based on `pyodide`). \
 Based on `jupyterlite-pyodide-kernel==0.1.2` (running `pyodide==0.24.0`).
@@ -18,7 +28,9 @@ Packages `lxml` and `peewee` are now included in the Pyodide package list. Try `
 
 #### Changed
 
- - https://github.com/brightway-lca/brightway-live/issues/33
+The GitHub Actions workflow was updated to use the latest versions of actions:
+
+ - https://github.com/brightway-lca/brightway-live/issues/33 by @michaelweinold
 
 #### Deprecated
 
@@ -38,12 +50,39 @@ N/A
 
 N/A
 
-### branch `emscripten-forge`
+### Branch `emscripten-forge`
 
 #### Added
+
+Packages `lxml` and `peewee` are now included in the emscripten-forge repository. They can be used to build the site by specifying them in the `environment.yml` file. In JupyterLite, try `import lxml` or `import peewee`:
+
+- https://github.com/brightway-lca/brightway-hub/issues/8 by @michaelweinold
+- https://github.com/brightway-lca/brightway-hub/issues/9 by @michaelweinold
+
+`dev` versions of Brightway packages (eg. `bw2io==0.9dev22`) were added to conda to facilitate the `emscripten-forge` build:
+
+- https://github.com/brightway-lca/brightway-hub/issues/19 by @michaelweinold with help from @m-rossi
 
 #### Changed
 
 The GitHub Actions workflow was updated to use the latest versions of actions:
 
- - https://github.com/brightway-lca/brightway-live/issues/33
+ - https://github.com/brightway-lca/brightway-live/issues/33 by @michaelweinold
+
+#### Deprecated
+
+N/A
+
+#### Removed
+
+N/A
+
+#### Fixed
+
+Various build issues were fixed:
+
+- https://github.com/brightway-lca/brightway-hub/issues/3 by @michaelweinold
+- https://github.com/brightway-lca/brightway-hub/issues/18 by @michaelweinold
+- https://github.com/brightway-lca/brightway-hub/issues/23 by @michaelweinold and @cmutel
+- https://github.com/brightway-lca/brightway-hub/issues/26 by @michaelweinold and @cmutel
+- https://github.com/emscripten-forge/empack/issues/81 by @DerThorsten
