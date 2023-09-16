@@ -1,4 +1,4 @@
-# Cheat Sheet
+# Instructions
 
 ## Reset the JupyterLite Environment
 
@@ -7,7 +7,7 @@ Currently, the interface of the JupiterLite environment does not provide a way t
 Related Issues:
 
 - [jupyterlite/jupyterlite#9](https://github.com/jupyterlite/jupyterlite/issues/9)
-- 
+
 This means that the environment must be reset manually. Usually, all data is stored in the browser's IndexedDB. You can reset the environment in your browser by following these steps:
 
 Google Chrome:

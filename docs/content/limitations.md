@@ -1,5 +1,14 @@
 # Limitations
 
+:::{note}
+_Almost_ all Python functionality is available in Brightway Live. However, there are some limitations. \
+If you find that something is not working as expected, [please report it here](https://github.com/brightway-lca/brightway-live/discussions/new?category=report-limitation).
+:::
+
+## Filesystem (Data Storage)
+
+### SQL Database Access
+
 Currently, an error is raised when trying to query a SQLite database in JupyterLite. This affects the use of Brightway, which stores data in sqlite databases through the `peewee` Python library. For instance, this simple test of the `peewee` library:
 
 ```python

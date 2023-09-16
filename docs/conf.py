@@ -16,7 +16,7 @@ version: str = 'latest' # required by the version switcher
 ### Project Configuration #########################################################################
 ###################################################################################################
 
-needs_sphinx = '7.2.5'
+needs_sphinx = '7.2.6'
 
 extensions = [
     # core extensions

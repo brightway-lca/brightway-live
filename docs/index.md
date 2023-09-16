@@ -28,6 +28,7 @@ hidden:
 maxdepth: 1
 ---
 Go Live <https://live.brightway.dev/>
-content/cheat_sheet
+content/instructions
 content/limitations
+content/faq
 ```
