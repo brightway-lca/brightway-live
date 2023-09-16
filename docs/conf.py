@@ -69,13 +69,16 @@ html_sidebars = {
     ],
 }
 
+footcent = str('test')
+
 html_theme_options = {
-    "announcement": "<p>Join the Discussion: 💬 <a href='https://matrix.to/#/#brightway:matrix.org'>Brightway Community Chat Rooms on Matrix</a></p>",
+    "announcement": "<p>⚠️ Brightway Live is in Public Beta ⚠️</p>",
     # page elements
     "navbar_start": ["navbar-logo"],
     "navbar_end": ["navbar-icon-links.html"],
     "footer_start": ["copyright"],
-    "footer_end": ["footer"],
+    "footer_center": ["footer_center"],
+    "footer_end": ["footer_end"],
     "secondary_sidebar_items": ["page-toc"],
     "header_links_before_dropdown": 7,
     # page elements content
@@ -97,7 +100,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "navigation_with_keys": True,
     "logo": {
-        "text": "Brightway",
+        "text": "Brightway Live",
         "image_light": "BW_all_black_transparent_landscape.svg",
         "image_dark": "BW_all_white_transparent_landscape.svg"
     },
