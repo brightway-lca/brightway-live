@@ -1,10 +1,15 @@
 # `brightway-live` (based on `pyodide`) Changelog
 
-This changelog follows the guidelines proposed by the ['keep a changelog'](https://keepachangelog.com/en/1.1.0/) project.
+This changelog follows the guidelines proposed by the ['keep a changelog'](https://keepachangelog.com/en/1.1.0/) project. \
+See also the [development meeting minutes](https://github.com/brightway-lca/brightway-live/discussions/21).
+
+## v0.1.1-beta (2023-09-16)
+
+### Branch `main`
+
+Added Sphinx documentation files. The documentation is now available at https://docs.brightway.dev/projects/live/.
 
 ## v0.1.0-beta (2023-09-16)
-
-See also the [development meeting minutes](https://github.com/brightway-lca/brightway-live/discussions/21).
 
 ### Not related to a specific Branch
 
