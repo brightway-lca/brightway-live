@@ -5,7 +5,7 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&logo=GitHub)](https://github.com/brightway-lca/brightway-documentation-readthedocs/discussions) \
 [Pilot-in-Command](https://en.wikipedia.org/wiki/Pilot_in_command): [@michaelweinold](https://github.com/michaelweinold)
 
-The interactive learning and teaching documentation for the Brightway life-cycle assessment software package. [GitHub Actions](https://github.com/features/actions) and [Github Pages](https://pages.github.com/) with the [Jupyter Book Theme](https://jupyterbook.org/en/stable/intro.html) and the [Thebe tool](https://thebe.readthedocs.io/en/stable/) used to build/host the interactive documentation.
+The development playground for the Brightway life-cycle assessment software package. [GitHub Actions](https://github.com/features/actions) and [Github Pages](https://pages.github.com/) with the [Jupyter Book Theme](https://jupyterbook.org/en/stable/intro.html) and the [Thebe tool](https://thebe.readthedocs.io/en/stable/) are used to build/host this site.
 
 | static documentation | interactive documentation | development playground |
 | ---- | ------------- | ------------- |
