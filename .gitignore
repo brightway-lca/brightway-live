@@ -114,3 +114,6 @@ dmypy.json
 # jupyterlite
 *.doit.db
 _output
+
+# Sphinx documentation
+_build/
