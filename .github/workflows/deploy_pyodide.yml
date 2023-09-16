@@ -7,7 +7,7 @@ on:
       - pyodide
   pull_request:
     branches:
-      - '*'
+      - pyodide
 
 jobs:
   build:
