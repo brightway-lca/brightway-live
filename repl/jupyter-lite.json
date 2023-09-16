@@ -6,5 +6,8 @@
       "jupyterlab-kernel-spy",
       "jupyterlab-tour"
     ],
+  },
+  "env": {
+    "BRIGHTWAY_DIR":"/tmp/brightway",
   }
 }
