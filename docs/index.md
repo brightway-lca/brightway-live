@@ -1,5 +1,13 @@
 # Brightway Live
 
+```{button-link} https://live.brightway.dev/
+:color: primary
+:expand:
+:tooltip: "Be sure to use Brightway Live as directed by your healthcare provider."
+{octicon}`rocket;1em;white` Go Live Now!
+```
+
+
 ## What is Brightway Live?
 
 Brightway Live is a Python-based development environment [^1] that runs entirely in the browser. This means that it is independent of the hardware, the operating system or the local Python environment of the user. It is powered by WebAssembly [^2] and JupyterLite [^3]. It was built by [Michael Weinold](https://github.com/michaelweinold) after learning about the possibilities of Python in WebAssembly at the EuroSciPy conference in Basel in 2022.
