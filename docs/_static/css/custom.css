@@ -1,0 +1,21 @@
+/* https://pydata-sphinx-theme.readthedocs.io/en/v0.8.1/user_guide/customizing.html */
+
+html[data-theme="light"] {
+    --pst-color-primary: #000000;
+    --pst-color-secondary: #00881d;
+    /* https://github.com/pydata/pydata-sphinx-theme/blob/bd67c18a1904b0301de0fb285792b87672e403ce/src/pydata_sphinx_theme/assets/styles/sections/_announcement.scss#L45C39-L45C51 */
+    /* announcement banner background color */
+    --pst-color-secondary-bg: #83d299;
+    /* https://github.com/pydata/pydata-sphinx-theme/blob/main/src/pydata_sphinx_theme/assets/styles/content/_admonitions.scss */
+    /* default admonition colors */
+    --pst-color-info-bg: #83d299;
+    --pst-color-info: #006f27;
+    /* https://github.com/pydata/pydata-sphinx-theme/blob/main/src/pydata_sphinx_theme/assets/styles/content/_admonitions.scss */
+    /* warning admonition colors */
+    --pst-color-warning-bg: #00dfc5;
+    --pst-color-warning: #006f27;
+    /* https://github.com/pydata/pydata-sphinx-theme/blob/main/src/pydata_sphinx_theme/assets/styles/content/_admonitions.scss */
+    /* attention admonition colors */
+    --pst-color-attention-bg: #83d299;
+    --pst-color-attention: #006f27;
+}
