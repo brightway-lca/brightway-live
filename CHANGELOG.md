@@ -32,23 +32,11 @@ The GitHub Actions workflow was updated to use the latest versions of actions:
 
  - https://github.com/brightway-lca/brightway-live/issues/33 by @michaelweinold
 
-#### Deprecated
-
-N/A
-
-#### Removed
-
-N/A
-
 #### Fixed
 
 - https://github.com/brightway-lca/brightway-live/issues/30 by @michaelweinold
 - https://github.com/brightway-lca/brightway-live/issues/29 by @cmutel
 - https://github.com/brightway-lca/brightway-live/issues/22 by @michaelweinold (was added in [Pyodide version 0.24.0](https://github.com/pyodide/pyodide/releases))
-
-#### Security
-
-N/A
 
 ### Branch `emscripten-forge`
 
@@ -68,14 +56,6 @@ Packages `lxml` and `peewee` are now included in the emscripten-forge repository
 The GitHub Actions workflow was updated to use the latest versions of actions:
 
  - https://github.com/brightway-lca/brightway-live/issues/33 by @michaelweinold
-
-#### Deprecated
-
-N/A
-
-#### Removed
-
-N/A
 
 #### Fixed
 
