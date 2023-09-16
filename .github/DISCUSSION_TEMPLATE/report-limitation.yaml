@@ -10,10 +10,10 @@ body:
     attributes:
       label: Affected Brightway Package
       options:
-        - `bw2data`
-        - `bw2calc`
-        - `bw2io`
-        - `bw2analyzer`
+        - bw2data
+        - bw2calc
+        - bw2io
+        - bw2analyzer
         - other
       multiple: true
     validations:
