@@ -1,0 +1,43 @@
+title: "[Report Limitation] "
+labels: ["limitation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Request Form
+        Thank you for taking the time to request documentation for this project!
+        Please fill out the below information:
+  - type: dropdown
+    attributes:
+      label: Request Category
+      options:
+        - Changes to existing page
+        - Creation of new page
+      multiple: false
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Page Title
+      description: Name or location of requested page
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: Describe what should change or what information should be added.
+      value: Add your description here.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Can you help?
+      options:
+        - label: I could help with the content of this documentation request.
+          required: false
+        - label: I could help with the technical implementation of this documentation request.
+          required: false
+  - type: markdown
+    attributes:
+      value: |
+        Compare also [the Contributing Guidelines](https://docs.brightway.dev/en/latest/content/contributing/contributing.html) for this project.
