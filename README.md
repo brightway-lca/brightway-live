@@ -5,109 +5,20 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&logo=GitHub)](https://github.com/brightway-lca/brightway-documentation-readthedocs/discussions) \
 [Pilot-in-Command](https://en.wikipedia.org/wiki/Pilot_in_command): [@michaelweinold](https://github.com/michaelweinold)
 
-The interactive learning and teaching documentation for the Brightway life-cycle assessment software package. [GitHub Actions](https://github.com/features/actions) and [Github Pages](https://pages.github.com/) with the [Jupyter Book Theme](https://jupyterbook.org/en/stable/intro.html) and the [Thebe tool](https://thebe.readthedocs.io/en/stable/) used to build/host the interactive documentation.
+The development playground for the Brightway life-cycle assessment software package. [GitHub Actions](https://github.com/features/actions) and [Github Pages](https://pages.github.com/) with the [Jupyter Book Theme](https://jupyterbook.org/en/stable/intro.html) and the [Thebe tool](https://thebe.readthedocs.io/en/stable/) are used to build/host this site.
 
 | static documentation | interactive documentation | development playground |
 | ---- | ------------- | ------------- |
 | [docs.brightway.dev](https://github.com/brightway-lca/brightway-documentation) | (coming soon!) | [live.brightway.dev](https://github.com/brightway-lca/brightway-hub) | 
 
-This repo is based on the [`jupyterlite-demo`](https://github.com/jupyterlite/demo) template. For testing purposes, [the JupyterLite Hub of this template](https://jupyterlite.github.io/demo) can be used.
 
 > [!IMPORTANT]
 > A version of the hub based instead on the `xeus-python-kernel` is available in the `emscripten-forge` branch of this repo. 
 
-<img width="525" alt="Screenshot 2023-09-15 at 09 50 53" src="https://github.com/brightway-lca/brightway-hub/assets/23102087/f2fa252b-bc73-4577-9f63-77e2526fc8cd">
-
-## Quickstart
-### Setup Repository
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/brightway-lca/brightway-hub.git
-```
-
-### Setup Python Environment
-
-> [!NOTE]
-> To add content (Jupyter Notebooks, Python files, etc.) to the site, no further setup is required.
-
-### Adding Content to the JupiterLite Environment
-
-Jupyter Notebook, Python files, etc. can be added to the JupyterLite environment by adding them to the `content` directory.
-### Building the JupyterLite Environment
-
-You can build the site by pushing to the `main` branch. The GitHub Actions workflow [`deploy.yml`](.github/workflows/deploy.yml) will build the site and publish it.
-
 > [!IMPORTANT]
-> The Pyodide distribution currently does not support including Python packages during build of the JupyterLite page. Instead pure-Python packages can be installed at runtime using the `micropip` package. See the [Cheat Sheet](#cheat-sheet) for more information. Packages with C-extensions have to be compiled to WebAssembly using [Emscripten](https://emscripten.org/) and [added to the Pyodide package list](https://pyodide.org/en/stable/development/new-packages.html).
+> A version of the hub based instead on the `pyodide` Jupyterlite kernel is available in the `pyodide` branch of this repo.
 
-> [!NOTE]
-> Brightway currently has two non-pure-Python dependencies: `lxml` and `peewee`. Both have been compiled for WebAssembly and are included in the Pyodide distribution used by the JupyterLite environment. Compare: https://github.com/brightway-lca/brightway-hub/issues/8, https://github.com/brightway-lca/brightway-hub/issues/9
-
-### Using the JypterLite Environment
-
-#### Reset the JupyterLite Environment
-
-Currently, the interface of the JupiterLite environment does not provide a way to reset the environment.
-
-##### Related Issues:
-
- - [ ] https://github.com/jupyterlite/jupyterlite/issues/9
-
-This means that the environment must be reset manually. [Usually](https://jupyterlite.readthedocs.io/en/latest/howto/configure/storage.html), all data is stored in the browser's `IndexedDB`. You can reset the environment in your browser by following these steps:
-
-- [Google Chrome](https://github.com/jupyterlite/jupyterlite/issues/9#issuecomment-875870620): 
-
-> Developer > Developer Tools > Application > Storage > Indexed DB > JupyterLite Storage > Delete Database
-
-- Mozilla Firefox:
-
-> Tools > Page Info > Permissions > Maintain Offline Storage > Clear Storage
-
-## Cheat Sheet
-
-### Micropip Installation
-
-[Micropip Documentation](https://micropip.pyodide.org/en/stable/project/usage.html)
-
-Relevant Commands:
-
-```python
-await micropip.install('package_name')
-micropip.uninstall('package_name')
-micropip.list()
-```
-
-### Check [JupyterLite Pyodide Kernel](https://github.com/jupyterlite/pyodide-kernel) Version
-
-```python
-import pyodide_kernel
-pyodide_kernel.__version__
-```
-
-### Check [Pyodide](https://github.com/pyodide/pyodide) Version
-
-```python
-import pyodide
-pyodide.__version__
-```
-
-### Check Python Version
-
-```python
-import sys
-sys.version
-```
-
-### Custom Pyodide Version
-
-- [JupyterLite Documentation: "Using a custom Pyodide distribution"](https://jupyterlite.readthedocs.io/en/latest/howto/pyodide/pyodide.html#using-a-custom-pyodide-distribution)
-- [JupyterLite Documentation: `jupyter-lite.json` Schema Documentation](https://jupyterlite.readthedocs.io/en/latest/reference/schema-v0.html)
-
-See also:
-
- - https://github.com/jupyterlite/pyodide-kernel/issues/44
+<img width="525" alt="Screenshot 2023-09-15 at 09 50 53" src="https://github.com/brightway-lca/brightway-hub/assets/23102087/f2fa252b-bc73-4577-9f63-77e2526fc8cd">
 
 ## 📚 References
 
