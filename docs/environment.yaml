@@ -1,4 +1,4 @@
-name: sphinx
+name: sphinx_brightway_live
 channels:
   - conda-forge
   - nodefaults
@@ -17,3 +17,6 @@ dependencies:
   - sphinx-copybutton=0.5.2 # for copy button in code blocks # https://anaconda.org/conda-forge/sphinx-copybutton/files
   # build process
   - sphinx-autobuild=2021.3.14 # live-html support # https://anaconda.org/conda-forge/sphinx-autobuild/files
+  # web assembly
+  - jupyterlite-sphinx=0.9.3 # jupyterlite support # https://anaconda.org/conda-forge/jupyterlite-sphinx/files
+  - jupyterlite-pyodide-kernel=0.1.2 # pyodide support # https://anaconda.org/conda-forge/jupyterlite-pyodide-kernel/files
