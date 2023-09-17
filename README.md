@@ -18,6 +18,65 @@ The development playground for the Brightway life-cycle assessment software pack
 > [!IMPORTANT]
 > A version of the hub based instead on the `pyodide` Jupyterlite kernel is available in the `pyodide` branch of this repo.
 
+## Building the Documentation
+
+### Setup Python Environment
+
+Set up a Python virtual environment that includes all packages required to build the documentation. A [Conda environment file](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) is provided [for convenient setup](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file). The file is located at [``./environment.yml``](environment.yml). Install the environment `sphinx` by running from the repository root directory:
+
+```bash
+conda env create -f 'docs/environment.yaml'
+```
+
+and activate the environment:
+
+```bash
+conda activate sphinx
+```
+
+You are now ready to build the documentation...
+
+### Building the Documentation
+
+1. You can build the documentation by __triggering every build manually__: To trigger the build, run [`sphinx-build`](https://www.sphinx-doc.org/en/master/man/sphinx-build.html) from the repository root directory:
+
+```bash
+sphinx-build docs _build/html -b singlehtml -a
+```
+
+| option | value | description |
+| ---------------------------- | ----- | ----------- |
+| sourcedir | `docs` | N/A |
+| outdir | `_build/html` | N/A |
+| -b | `singlehtml` | create only a single html page |
+| -a | N/A | always write all output files |
+| `-j` | `auto` | [speed up build by using multiple processes](https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-j) |
+
+
+You can now preview the documentation, built as a single html page at:
+
+```
+_build/html/homepage.html
+```
+
+2. You can also build the documentation by automatically triggering a build after every change to the source files, providing a "live" preview of changes. To trigger the automated builds, run [`sphinx-autobuild`](https://github.com/executablebooks/sphinx-autobuild) from the repository root directory:
+
+```bash
+sphinx-autobuild docs _build/html -a -j auto --open-browser
+```
+
+| positional argument or option| value | description |
+| ---------------------------- | ----- | ----------- |
+| sourcedir | `docs` | N/A |
+| outdir | `_build/html` | N/A |
+| `-a` | N/A | always write all output files |
+| `-j` | `auto` | [speed up build by using multiple processes](https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-j) |
+| `--open-browser` | N/A | automatically open browser |
+
+
+You can now preview the documentation at (the browser window will open automatically ✨):
+http://127.0.0.1:8000/
+
 ## 📚 References
 
 Compare the `jupyterlite`:
