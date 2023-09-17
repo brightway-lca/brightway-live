@@ -1,4 +1,4 @@
-name: bw_dev
+name: bw_live_pyodide
 channels:
   - conda-forge
   - conda-forge/label/bw2io_dev
@@ -11,6 +11,6 @@ dependencies:
   - scipy
   - pandas
   # BRIGHTWAY CORE
-  - bw2io=0.9.dev21 # https://anaconda.org/conda-forge/bw2io/files # loaded from conda-forge under the `dev` label
+  - bw2io=0.9.dev22 # https://anaconda.org/conda-forge/bw2io/files # loaded from conda-forge under the `dev` label
   - bw2data=4.0.dev25 # https://anaconda.org/conda-forge/bw2data/files # loaded from conda-forge under the `dev` label
   - bw2calc=2.0.dev14 # https://anaconda.org/conda-forge/bw2calc/files  # loaded from conda-forge under the `dev` label
