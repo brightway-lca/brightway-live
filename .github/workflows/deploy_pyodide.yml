@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - pyodide
+    paths: # only trigger when files within this directory change
+      - content/**
   pull_request:
     branches:
       - pyodide
