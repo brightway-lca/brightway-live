@@ -9,6 +9,11 @@ If you find that something is not working as expected, [please report it here](h
 
 ### SQL Database Access
 
+```{admonition} Related Issues
+:class: note
+https://github.com/brightway-lca/brightway-live/issues/10
+```
+
 Currently, an error is raised when trying to query a SQLite database in JupyterLite. This affects the use of Brightway, which stores data in sqlite databases through the `peewee` Python library. For instance, this simple test of the `peewee` library:
 
 ```python
@@ -39,8 +44,26 @@ raises the following error:
 DatabaseError: database disk image is malformed
 ```
 
-The current workaround is documented here:
-
- - https://github.com/brightway-lca/brightway-live/issues/10
-
 Instead of the default storage location a different location at `/tmp/` must be specified for the database. This is done [by setting the `BRIGHTWAY_DIR` environment variable](https://docs.brightway.dev/en/latest/content/faq/data_management.html#how-do-i-change-my-data-directory).
+
+### Searchable Databases
+
+```{admonition} Related Issues
+:class: note
+https://github.com/pyodide/pyodide/discussions/4150
+```
+
+### Restoring Brightway Project Backups (from `*.tar.gz`)
+
+```{admonition} Related Issues
+:class: note
+https://github.com/brightway-lca/brightway-live/issues/37 \
+https://github.com/jupyterlite/jupyterlite/issues/1153
+```
+
+### Download Databases (eg. USEEIO)
+
+```{admonition} Related Issues
+:class: note
+test
+```
