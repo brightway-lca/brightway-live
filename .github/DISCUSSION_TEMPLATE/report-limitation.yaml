@@ -28,7 +28,7 @@ body:
     attributes:
       label: What's the error message?
       description: Please paste the complete error message here.
-      render: true
+      render: python
     validations:
       required: true
   - type: markdown
