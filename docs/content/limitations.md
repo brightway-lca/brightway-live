@@ -81,7 +81,7 @@ bw2io.restore_project_directory(
 
 functions. The resulting backup file (`*.tar.gz`) can be as large as 300MB for a project based on Ecoinvent 3.9. Unfortunately, the current version of JupyterLite does not support the extraction of `*.tar.gz` files larger than ~1MB. This is likely due to a bug and does not present an inherent limitation of JupyterLite or WASM.
 
-### 
+### Missing `pyfilesystem2` Support
 
 ```{admonition} Related Issues
 :class: note
@@ -121,6 +121,23 @@ bw2io.add_example_database(searchable=False)
 ## Network Connections
 
 ### Downloading Databases (eg. USEEIO)
+
+Some functions of `bw2io` can download databases from the internet. For instance, [the following command](https://docs.brightway.dev/en/latest/api/bw2io/index.html#bw2io.useeio11) will download the USEEIO database:
+
+```python
+bw2io.useeio11()
+```
+
+Unfortunately, due to [a limitation of Pyodide](https://pyodide.org/en/stable/project/roadmap.html#write-http-client-in-terms-of-web-apis):
+
+> Python packages make an extensive use of packages such as `requests` to synchronously fetch data. We currently can’t use such packages since sockets are not available in Pyodide. 
+
+this command will fail with the following error:
+
+```python
+ImportError: Can't connect to HTTPS URL because the SSL module is not available.
+```
+
 
 ```{admonition} Related Issues
 :class: note
