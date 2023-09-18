@@ -81,6 +81,45 @@ bw2io.restore_project_directory(
 
 functions. The resulting backup file (`*.tar.gz`) can be as large as 300MB for a project based on Ecoinvent 3.9. Unfortunately, the current version of JupyterLite does not support the extraction of `*.tar.gz` files larger than ~1MB. This is likely due to a bug and does not present an inherent limitation of JupyterLite or WASM.
 
+### 
+
+```{admonition} Related Issues
+:class: note
+https://github.com/brightway-lca/brightway-live/issues/39
+```
+
+Pyodide currently does not implement all of the standard [pyfilesystem2](https://docs.pyfilesystem.org/en/latest/index.html) library. Running
+
+```python
+bw2io.add_example_database(searchable=False)
+```
+
+will therefore lead to the error:
+
+```python
+AttributeError: 'Config' object has no attribute 'is_test'
+```
+
+A patched version of `fs` has been made available. This means, that setup of Brightway in the notebooks must follow this pattern (including the order of commands):
+
+```python
+import micropip
+await micropip.install(
+    'https://files.brightway.dev/fs-2.5.1-py2.py3-none-any.whl'
+)
+import os
+os.environ["BRIGHTWAY_DIR"] = "/tmp/"
+await micropip.install('bw2data==4.0.dev29', keep_going = True)
+await micropip.install('bw2io==0.9.dev23', keep_going = True)
+await micropip.install('bw2calc==2.0.dev14', keep_going = True)
+import bw2data
+import bw2calc
+import bw2io
+bw2io.add_example_database(searchable=False)
+```
+
+## Network Connections
+
 ### Downloading Databases (eg. USEEIO)
 
 ```{admonition} Related Issues
