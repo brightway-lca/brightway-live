@@ -34,10 +34,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        Compare also [the open issues](https://github.com/brightway-lca/brightway-live/issues) for this project.
+        Compare also [the open issues](https://github.com/brightway-lca/brightway-live/issues) and [discussions](https://github.com/brightway-lca/brightway-live/discussions/categories/report-limitation) for this project. Known limitations are also [listed in the documentation](https://docs.brightway.dev/projects/live/content/limitations.html).
   - type: checkboxes
     attributes:
-      label: I have done the following...
+      label: In order to avoid multiple reports of the same issue, please confirm, that...
       options:
-        - label: I searched for similar discussions and issues and didn't find any.
+        - label: I searched for similar reported limitations and didn't find any.
           required: true
