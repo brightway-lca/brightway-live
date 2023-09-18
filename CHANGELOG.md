@@ -3,6 +3,26 @@
 This changelog follows the guidelines proposed by the ['keep a changelog'](https://keepachangelog.com/en/1.1.0/) project. \
 See also the [development meeting minutes](https://github.com/brightway-lca/brightway-live/discussions/21).
 
+## v0.2.0-beta (2023-09-18)
+
+### Branch `main`
+#### Added
+
+Updated documentation with known limitations and instructions on how to report them through [the discussions template](https://github.com/brightway-lca/brightway-live/blob/main/.github/DISCUSSION_TEMPLATE/report-limitation.yaml).
+
+ - https://github.com/brightway-lca/brightway-live/issues/41 by @michaelweinold
+
+Minor build issues were fixed:
+
+ - https://github.com/brightway-lca/brightway-live/issues/36
+
+### Not related to a specific Branch
+
+Various Brightway issues related to the emscripten platform were fixed, such that `` now works:
+
+ - https://github.com/brightway-lca/brightway-live/issues/39 by @cmutel
+ - https://github.com/brightway-lca/brightway-live/issues/38 by @cmutel
+
 ## v0.1.1-beta (2023-09-16)
 
 ### Branch `main`
