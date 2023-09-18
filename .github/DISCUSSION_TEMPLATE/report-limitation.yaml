@@ -37,7 +37,7 @@ body:
         Compare also [the open issues](https://github.com/brightway-lca/brightway-live/issues) for this project.
   - type: checkboxes
     attributes:
-      label: I have done the following:
+      label: I have done the following...
     options:
       - label: I searched for similar discussions and issues and didn't find any.
         required: true
