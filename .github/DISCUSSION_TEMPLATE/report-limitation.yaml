@@ -21,10 +21,23 @@ body:
   - type: textarea
     attributes:
       label: What's broken or not working as expected?
-      description: Please describe the limitation and paste the relevant Python input/output.
+      description: Please describe the limitation.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What's the error message?
+      description: Please paste the complete error message here.
+      render: true
     validations:
       required: true
   - type: markdown
     attributes:
       value: |
         Compare also [the open issues](https://github.com/brightway-lca/brightway-live/issues) for this project.
+  - type: checkboxes
+    attributes:
+      label: I have done the following:
+    options:
+      - label: I searched for similar discussions and issues and didn't find any.
+        required: true
