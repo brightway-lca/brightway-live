@@ -55,5 +55,6 @@ content/about
 content/instructions
 content/limitations
 content/faq
+content/changelog
 Go Live <https://live.brightway.dev/>
 ```

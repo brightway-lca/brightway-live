@@ -1,5 +1,3 @@
-# `brightway-live` (based on `pyodide`) Changelog
-
 This changelog follows the guidelines proposed by the ['keep a changelog'](https://keepachangelog.com/en/1.1.0/) project. \
 See also the [development meeting minutes](https://github.com/brightway-lca/brightway-live/discussions/21).
 
