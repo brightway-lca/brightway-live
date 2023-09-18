@@ -137,9 +137,3 @@ this command will fail with the following error:
 ```python
 ImportError: Can't connect to HTTPS URL because the SSL module is not available.
 ```
-
-
-```{admonition} Related Issues
-:class: note
-test
-```
