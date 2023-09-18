@@ -81,7 +81,7 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_center": ["footer_center"],
     "footer_end": ["footer_end"],
-    "navbar_persistent": [], # needs to be empty, otherwise the search bar is shown https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/search.html#configure-the-search-field-position
+    "navbar_persistent": ["theme-switcher"], # must not be removed and not contain "search-button", otherwise the search bar is shown https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/search.html#configure-the-search-field-position
     "secondary_sidebar_items": ["page-toc"],
     "header_links_before_dropdown": 7,
     # page elements content
