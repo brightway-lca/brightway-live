@@ -4,46 +4,56 @@
 :color: primary
 :expand:
 :tooltip: "Be sure to use Brightway Live as directed by your healthcare provider."
-{octicon}`rocket;1em;white` Go Live Now!
+Go Live Now: Launch JupyterLite Environment {octicon}`rocket;1em;white`
 ```
 
-## What is Brightway Live?
+## What is Brightway
 
-Brightway Live is a Python-based development environment [^1] that runs entirely in the browser. This means that it is independent of the hardware, the operating system or the local Python environment of the user. It is powered by WebAssembly [^2] and JupyterLite [^3]. It was built by [Michael Weinold](https://github.com/michaelweinold) after learning about the possibilities of Python in WebAssembly at the EuroSciPy conference in Basel in 2022.
+Brightway is an open-source software package for life cycle assessment (LCA) and environmental impact assessment written in the Python programming language. LCA is a method for evaluating the environmental impacts of a product, process, or service. It involves analyzing all of the inputs and outputs of a system, including raw materials, energy use, and waste products, and quantifying the environmental impacts of these inputs and outputs over the entire lifecycle of the system.
 
-## What can I do with Brightway Live?
+Brightway is designed to make it easy to work with large datasets and perform LCA calculations quickly and accurately. It thus provides a powerful tool for anyone interested in performing LCA or evaluating the environmental impacts of products and processes. Brightway is not intended to replace software like _SimaPro_ or _OpenLCA_, but instead offers possibilities to break the limits of conventional LCA. Brightway is especially attractive for researchers, especially when used with [Jupyter notebooks](https://jupyter.org/).
 
-At the moment, you can play around with it. You can load brightway packages (eg. `bw2io`, `bw2calc`, `bw2data` and `bw2analyzer`) and use them in a Jupyter Notebook or in a Python console. In the long run, you will be able to use this to teach life-cycle assessment with Brightway at scale. You will not need to worry about installation or setup of the software. You will not need to worry about the different hardware and operating systems that your students bring to class. You will not need to worry about setting up a JupyterHub server and the associated overhead.
+## How can I learn Brightway?
 
-```{eval-rst}
-.. replite::
-   :kernel: pyodide
-   :height: 200px
-   :prompt: Go Live!
-   :prompt_color: #dc3545
+::::{grid} 1 1 3 3
+:gutter: 3
 
-   import matplotlib.pyplot as plt
-   import numpy as np
+:::{grid-item-card} 📚 Read the Docs!
+:link: https://docs.brightway.dev/
+:link-type: url
 
-   x = np.linspace(0, 2 * np.pi, 200)
-   y = np.sin(x)
+Brightway has extensive documentation. This includes the theory of life-cycle assessment the the Brightway software framework.
++++
+Learn more {fas}`arrow-right`
+:::
 
-   fig, ax = plt.subplots()
-   ax.plot(x, y)
-   plt.show()
-```
+:::{grid-item-card} 👨‍🏫 Learn it!
+:link: https://learn.brightway.dev/
+:link-type: url
 
-[^1]: A development environment is the collection of processes and tools that are used to develop the source code for a program or software product.
-[^2]: [WebAssembly](https://en.wikipedia.org/wiki/WebAssembly) (often abbreviated "WASM") is _a binary instruction format and a runtime environment_. This means it acts as a "virtual machine for the web. Unlike high-level programming languages like JavaScript or Python, which are typically interpreted by a runtime environment, WebAssembly code is compiled to a binary format. This binary code is the same regardless of the user's device or operating system.
-[^3]: [JupyterLite](https://jupyterlite.readthedocs.io) is a version of [JupyterLab](https://jupyter.org), which is optimized for the browser.
+Brightway has step-by-step tutorials for beginners and experts alike. Learn how to use Brightway to do life-cycle assessment.
++++
+Learn more {fas}`arrow-right`
+:::
+
+:::{grid-item-card} 💻 Try it!
+
+Brightway has a live demo in a JupyterLite development environment where you can try out Brightway without installing anything.
++++
+You are here!
+:::
+
+::::
+
 
 ```{toctree}
 ---
 hidden:
 maxdepth: 1
 ---
-Go Live <https://live.brightway.dev/>
+content/about
 content/instructions
 content/limitations
 content/faq
+Go Live <https://live.brightway.dev/>
 ```

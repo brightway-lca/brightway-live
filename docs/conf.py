@@ -39,7 +39,7 @@ extensions = [
     # copy button on code blocks
     "sphinx_copybutton",
     # wasm
-    "jupyterlite_sphinx",
+    #"jupyterlite_sphinx",
 ]
 
 root_doc = 'index'
