@@ -38,6 +38,6 @@ body:
   - type: checkboxes
     attributes:
       label: I have done the following...
-    options:
-      - label: I searched for similar discussions and issues and didn't find any.
-        required: true
+      options:
+        - label: I searched for similar discussions and issues and didn't find any.
+          required: true
