@@ -49,6 +49,7 @@ Instead of the default storage location a different location at `/tmp/` must be 
 
 ```{admonition} Related Issues
 :class: note
+https://github.com/brightway-lca/brightway-live/issues/49 \
 https://github.com/pyodide/pyodide/discussions/4150 \
 https://github.com/emscripten-core/emscripten/issues/11797
 ```
