@@ -5,5 +5,5 @@ dependencies:
   - python=3.11
   - pip
   - jupyter_server=2.14.0 # https://anaconda.org/conda-forge/jupyter_server/files
-  - jupyterlite-core=0.3.0 # https://anaconda.org/conda-forge/jupyterlite-core/files
+  - jupyterlite-core=0.2.3 # https://anaconda.org/conda-forge/jupyterlite-core/files
   - jupyterlite-xeus-python=1.0.0 # https://anaconda.org/conda-forge/jupyterlite-xeus-python/files
