@@ -35,7 +35,7 @@ jobs:
           jupyter lite build --contents content --output-dir dist
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@4 # https://github.com/actions/upload-artifact/releases
+        uses: actions/upload-pages-artifact@3 # https://github.com/actions/upload-pages-artifact/releases
         with:
           path: ./dist
 
