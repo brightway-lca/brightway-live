@@ -35,23 +35,23 @@ jobs:
           jupyter lite build --contents content --output-dir dist
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@4 # https://github.com/actions/upload-artifact/releases
         with:
           path: ./dist
 
-#  deploy:
-#    needs: build
-#    if: github.ref == 'refs/heads/emscripten-forge'
-#    permissions:
-#      pages: write
-#      id-token: write
-#
-#    environment:
-#      name: github-pages
-#      url: ${{ steps.deployment.outputs.page_url }}
-#
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Deploy to GitHub Pages
-#        id: deployment
-#        uses: actions/deploy-pages@v2
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/emscripten-forge'
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # https://github.com/actions/deploy-pages/releases
