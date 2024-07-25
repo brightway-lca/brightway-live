@@ -1,16 +1,16 @@
 # Core modules (mandatory)
-jupyterlite-core==0.3.0 # https://pypi.org/project/jupyterlite-core/#history
-jupyterlab==4.2.0 # https://pypi.org/project/jupyterlab/#history
+jupyterlite-core==0.4.0 # https://pypi.org/project/jupyterlite-core/#history
+jupyterlab==4.2.4 # https://pypi.org/project/jupyterlab/#history
 
 # Python kernel (optional)
-jupyterlite-pyodide-kernel==0.3.1 # https://pypi.org/project/jupyterlite-pyodide-kernel/#history
+jupyterlite-pyodide-kernel==0.4.0 # https://pypi.org/project/jupyterlite-pyodide-kernel/#history
 
 # JupyterLab: Fasta file renderer (optional)
 jupyterlab-fasta>=3,<4 # https://pypi.org/project/jupyterlab-fasta/#history
 # JupyterLab: Geojson file renderer (optional)
-jupyterlab-geojson>=3,<4 # https://pypi.org/project/jupyterlab-geojson/#history
+# jupyterlab-geojson>=3,<4 # https://pypi.org/project/jupyterlab-geojson/#history
 # JupyterLab: dark theme
-jupyterlab-night # https://pypi.org/project/jupyterlab-night/#history
+# jupyterlab-night # https://pypi.org/project/jupyterlab-night/#history
 
 # Python: ipywidget library for Jupyter notebooks (optional)
 ipywidgets>=8.0.0,<9 # https://pypi.org/project/ipywidgets/#history
