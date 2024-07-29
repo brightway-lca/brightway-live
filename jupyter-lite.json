@@ -1,8 +1,7 @@
 {
     "jupyter-lite-schema-version": 0,
     "jupyter-config-data": {
-        "settingsStorageDrivers": [
-        "webSQLStorage",
-        ],
+        "settingsStorageDrivers": ["webSQLStorage"],
+        "contentsStorageDrivers": ["webSQLStorage"],
     },
 }
