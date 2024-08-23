@@ -7,22 +7,3 @@ jupyterlite-pyodide-kernel==0.4.0 # https://pypi.org/project/jupyterlite-pyodide
 
 # JupyterLab: Fasta file renderer (optional)
 jupyterlab-fasta>=3,<4 # https://pypi.org/project/jupyterlab-fasta/#history
-# JupyterLab: Geojson file renderer (optional)
-# jupyterlab-geojson>=3,<4 # https://pypi.org/project/jupyterlab-geojson/#history
-# JupyterLab: dark theme
-# jupyterlab-night # https://pypi.org/project/jupyterlab-night/#history
-
-# Python: ipywidget library for Jupyter notebooks (optional)
-ipywidgets>=8.0.0,<9 # https://pypi.org/project/ipywidgets/#history
-# Python: ipyevents library for Jupyter notebooks (optional)
-ipyevents>=2.0.1 # https://pypi.org/project/ipyevents/#history
-# Python: interative Matplotlib library for Jupyter notebooks (optional)
-ipympl>=0.8.2 # https://pypi.org/project/ipympl/#history
-# Python: ipycanvas library for Jupyter notebooks (optional)
-ipycanvas>=0.9.1 # https://pypi.org/project/ipycanvas/#history
-# Python: ipyleaflet library for Jupyter notebooks (optional)
-ipyleaflet>=0.17.3 # https://pypi.org/project/ipyleaflet/#history
-
-# Python: plotting libraries (optional)
-plotly>=5,<6 # https://pypi.org/project/plotly/#history
-bqplot # https://pypi.org/project/bqplot/#history
