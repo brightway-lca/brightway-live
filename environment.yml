@@ -1,13 +1,15 @@
 name: xeus-python-kernel
 channels:
+  - https://conda.anaconda.org/michaelweinold/label/emscripten # for platform-specific version of bw2data
   - https://conda.anaconda.org/conda-forge/label/bw2io_dev
-  - https://conda.anaconda.org/conda-forge/label/bw2data_dev
   - https://conda.anaconda.org/conda-forge/label/bw2calc_dev
   - https://repo.mamba.pm/emscripten-forge # check packages at https://beta.mamba.pm/channels
-  - https://conda.anaconda.org/conda-forge
+  - michaelweinold
+  - conda-forge
   - nodefaults
 dependencies:
   - xeus-python
+  - ipycanvas
   # DATA SCIENCE
   - pandas
   - numpy
@@ -16,7 +18,8 @@ dependencies:
   # BRIGHTWAY DEPENDENCIES (NOT PURE PYTHON)
   - https://repo.mamba.pm/emscripten-forge::peewee # required by Brightway, loaded from emscripten-forge
   - https://repo.mamba.pm/emscripten-forge::lxml # required by Brightway, loaded from emscripten-forge
-  # BRIGHTWAY CORE
-  - bw2io=0.9.dev21 # https://anaconda.org/conda-forge/bw2io/files # loaded from conda-forge under the `dev` label
-  - bw2data=4.0.dev25 # https://anaconda.org/conda-forge/bw2data/files # loaded from conda-forge under the `dev` label
-  - bw2calc=2.0.dev14 # https://anaconda.org/conda-forge/bw2calc/files # loaded from emscripten-forge (cf. https://github.com/conda-forge/bw2calc-feedstock/pull/14)
+  # BRIGHTWAY CORE (CONDA FORGE)
+  - bw2io=0.9.dev33 # https://anaconda.org/conda-forge/bw2io/files # loaded from conda-forge under the `dev` label
+  - bw2calc=2.0.dev18 # https://anaconda.org/conda-forge/bw2calc/files # loaded from emscripten-forge (cf. https://github.com/conda-forge/bw2calc-feedstock/pull/14)
+  # BRIGHTWAY CORE (CUSTOM CHANNEL DUE TO PLATFORM SPECIFIC DEPENDENCIES)
+  - bw2data=4.0.dev51 # https://anaconda.org/michaelweinold/bw2data/files # loaded from michaelweinold under the `emscripten` label

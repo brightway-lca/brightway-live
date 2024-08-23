@@ -1,9 +1,10 @@
+# https://github.com/jupyterlite/xeus-python-demo/blob/main/build-environment.yml
 name: build-env
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
+  - python
   - pip
-  - jupyter_server=2.14.0 # https://anaconda.org/conda-forge/jupyter_server/files
-  - jupyterlite-core=0.2.3 # https://anaconda.org/conda-forge/jupyterlite-core/files
-  - jupyterlite-xeus-python=1.0.0 # https://anaconda.org/conda-forge/jupyterlite-xeus-python/files
+  - jupyter_server=2.14.2 # https://anaconda.org/conda-forge/jupyter_server/files
+  - jupyterlite-core >=0.3.0,<0.4.0 # https://anaconda.org/conda-forge/jupyterlite-core/files
+  - jupyterlite-xeus>=0.1.2,<0.2 # https://anaconda.org/conda-forge/jupyterlite-xeus/files
