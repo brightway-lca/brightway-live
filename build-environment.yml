@@ -5,6 +5,6 @@ channels:
 dependencies:
   - python
   - pip
-  - jupyter_server=2.14.2 # https://anaconda.org/conda-forge/jupyter_server/files
+  - jupyter_server #=2.14.2 # https://anaconda.org/conda-forge/jupyter_server/files
   - jupyterlite-core >=0.3.0,<0.4.0 # https://anaconda.org/conda-forge/jupyterlite-core/files
   - jupyterlite-xeus>=0.1.2,<0.2 # https://anaconda.org/conda-forge/jupyterlite-xeus/files
