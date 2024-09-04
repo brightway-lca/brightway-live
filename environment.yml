@@ -12,6 +12,7 @@ dependencies:
   # DATA SCIENCE
   - pandas
   - numpy
+  - scipy=1.8.1
   # PLOTTING
   - matplotlib
   # BRIGHTWAY DEPENDENCIES (NOT PURE PYTHON)
