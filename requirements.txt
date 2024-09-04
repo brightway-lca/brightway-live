@@ -1,9 +1,6 @@
 # Core modules (mandatory)
-jupyterlite-core==0.4.0 # https://pypi.org/project/jupyterlite-core/#history
-jupyterlab==4.2.4 # https://pypi.org/project/jupyterlab/#history
+jupyterlite-core==0.4.1 # https://pypi.org/project/jupyterlite-core/#history
+jupyterlab==4.2.5 # https://pypi.org/project/jupyterlab/#history
 
 # Python kernel (optional)
-jupyterlite-pyodide-kernel==0.4.0 # https://pypi.org/project/jupyterlite-pyodide-kernel/#history
-
-# JupyterLab: Fasta file renderer (optional)
-jupyterlab-fasta>=3,<4 # https://pypi.org/project/jupyterlab-fasta/#history
+jupyterlite-pyodide-kernel==0.4.2 # https://pypi.org/project/jupyterlite-pyodide-kernel/#history
