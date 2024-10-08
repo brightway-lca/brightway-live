@@ -7,21 +7,25 @@ tags:
   - lca
   - life-cycle assessment
   - teaching
+  - wasm
+  - webassembly
 authors:
-  - name: Michael Weinold
+  - name: Michael Philipp Weinold
     orcid: 0000-0003-4859-2650
     equal-contrib: false
-    affiliation: 1
+    affiliation: 1, 2
   - name: Christopher Mutel
     orcid: 0000-0002-7898-9862
     equal-contrib: false
     affiliation: 2
 affiliations:
- - name: Technology Assessment Group, Paul Scherrer Institute, Villigen, Switzerland
+ - name: Center for Energy and Environmental Sciences, Paul Scherrer Institute (PSI), Villigen, Switzerland
    index: 1
- - name: Ecoinvent Association, Zurich, Switzerland
+ - name: Department of Mechanical and Process Engineering, ETH Zurich, Zurich, Switzerland
    index: 2
-date: 25 September 2023
+ - name: Départ de Sentier (DdS), Riniken AG, Switzerland
+   index: 3
+date: 01 December 2024
 bibliography: references.bib
 
 ---
@@ -69,6 +73,18 @@ scientific explorations of forthcoming data releases from the *Gaia* mission
 
 # Figures
 
+TODO:
+
+Figure 1: Load times of all Brightway packages (local machine, WASM-pyodide, WASM-xeus)
+
+Figure 2: Calculation performance (graph traversal, matrix calculcation, same platforms as above)
+
+Figure 3: WASM infrastructure overview
+
+Figure 4: Tools for interactive webapps/dashboards
+
+
+
 Figures can be included like this:
 ![Caption for example figure.\label{fig:example}](figure.png)
 and referenced from text using \autoref{fig:example}.
@@ -78,6 +94,7 @@ Figure sizes can be customized by adding an optional second parameter:
 
 # Acknowledgements
 
-We gratefully acknowledge helpful conversations and contributions from the developers of [the Pyodide project](https://github.com/pyodide/), the [Emscripten Forge project](https://github.com/emscripten-forge), [the Jupyter Xeus project](https://github.com/jupyter-xeus) and [the JupyterLite project](https://github.com/jupyterlite). Michael Weinold gratefully acknowledges funding from the Swiss Innovation Agency Innosuisse through the WISER flagship project.
+This work has been supported by the Swiss Innovation Agency Innosuisse in the context of the WISER flagship project (PFFS-21-72). In addition, Michael P. Weinold gratefully acknowledges the support of the Swiss Study Foundation. The authors further gratefully acknowledge helpful conversations and contributions from the developers of [the Pyodide project](https://github.com/pyodide/), the [Emscripten Forge project](https://github.com/emscripten-forge), [the Jupyter Xeus project](https://github.com/jupyter-xeus) and [the JupyterLite project](https://github.com/jupyterlite). Michael Weinold gratefully acknowledges funding from the Swiss Innovation Agency Innosuisse through the WISER flagship project.
 
 # References
+
