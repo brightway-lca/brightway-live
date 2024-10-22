@@ -5,7 +5,7 @@
         "contentsStorageDrivers": ["asyncStorage"],
         "litePluginSettings": {
             "@jupyterlite/pyodide-kernel-extension:kernel": {
-                "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"
+                "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.26.3/full/pyodide.js"
             }
         }
     }
